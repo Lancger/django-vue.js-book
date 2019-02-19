@@ -21,13 +21,19 @@ python get-pip.py
 pip install --upgrade pip
 pip install django==1.11 -i https://pypi.douban.com/simple/
 
+#mysql模块
+pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pymysql
+###在工程目录中的__init__.py中添加如下代码
+vim ~/__init__.py
+
+import pymysql
+pymysql.install_as_MySQLdb()
+
 #快速生成requirements.txt文件
 pip3 freeze > requirements.txt
 
 #安装requirements依赖
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/  -r requirements.txt
-
-
 ```
 
 ## 功能
