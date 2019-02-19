@@ -11,6 +11,10 @@ django rest framework + vue 的图书管理小项目，前后端分离教程
 - Vue.js 2.9
     - iview 2.8
     - iview-admin 1.3
+    
+## 依赖
+- 
+     - pip install django==1.11 -i https://pypi.douban.com/simple/
 
 ## 功能
 
