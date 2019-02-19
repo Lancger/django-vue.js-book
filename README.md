@@ -21,6 +21,12 @@ python get-pip.py
 pip install --upgrade pip
 pip install -r backend/requirements.txt -i https://pypi.douban.com/simple/
 
+###安装虚拟环境
+pip install virtualenv
+
+###激活虚拟环境
+virtualenv demo --no-site-packages
+
 #mysql模块
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pymysql
 ###在工程目录中的__init__.py中添加如下代码
