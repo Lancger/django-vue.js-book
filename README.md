@@ -19,11 +19,7 @@ django rest framework + vue 的图书管理小项目，前后端分离教程
 wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 pip install --upgrade pip
-pip install django==1.11 -i https://pypi.douban.com/simple/
-pip install django-cors-headers -i https://pypi.douban.com/simple/
-pip install djangorestframework -i https://pypi.douban.com/simple/
-pip install django-rest-swagger -i https://pypi.douban.com/simple/
-pip install djangorestframework-jwt -i https://pypi.douban.com/simple/
+pip install -r backend/requirements.txt -i https://pypi.douban.com/simple/
 
 #mysql模块
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pymysql
