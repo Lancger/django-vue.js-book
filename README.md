@@ -5,7 +5,7 @@ django rest framework + vue 的图书管理小项目，前后端分离教程
 ## 环境
 
 - Python 2.7
-    - Django 1.11
+    - Django 1.11.6
     - Django Rest Framework 3.8
     
 - Vue.js 2.9
@@ -67,3 +67,12 @@ pip install -i https://pypi.mirrors.ustc.edu.cn/simple/  -r requirements.txt
 
 ## 交流学习
 - QQ群 630791951
+
+## 报错
+```
+报错一：
+WrappedAttributeError: 'CSRFCheck' object has no attribute 'process_request'
+
+解决办法：
+pip install --upgrade django==1.11.6 -i https://pypi.douban.com/simple/
+```
