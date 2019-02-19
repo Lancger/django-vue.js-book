@@ -29,6 +29,10 @@ vim ~/__init__.py
 import pymysql
 pymysql.install_as_MySQLdb()
 
+# 执行数据库同步操作
+python manage.py makemigrations
+python manage.py migrate
+
 #快速生成requirements.txt文件
 pip3 freeze > requirements.txt
 
