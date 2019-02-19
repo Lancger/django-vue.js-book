@@ -24,7 +24,7 @@ pip install django==1.11 -i https://pypi.douban.com/simple/
 #mysql模块
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pymysql
 ###在工程目录中的__init__.py中添加如下代码
-vim ~/__init__.py
+vim myapp/__init__.py
 
 import pymysql
 pymysql.install_as_MySQLdb()
