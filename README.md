@@ -37,8 +37,17 @@ pymysql.install_as_MySQLdb()
 python manage.py makemigrations
 python manage.py migrate
 
+1、创建超级管理员
+python manage.py createsuperuser
+
+2、修改密码
+python manage.py changepassword root
+
+3、清除sessions
+python manage.py clearsessions
+
 #快速生成requirements.txt文件
-pip3 freeze > requirements.txt
+pip freeze > requirements.txt
 
 #安装requirements依赖
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/  -r requirements.txt
