@@ -39,7 +39,7 @@ pymysql.install_as_MySQLdb()
 ## 数据库操作
 ```
 # 创建数据库
-create database rest;
+mysql -h 127.0.0.1 -u root -p123456 -e "create database rest default character set utf8mb4 collate utf8mb4_unicode_ci;"
 
 # 执行数据库同步操作
 python manage.py makemigrations
