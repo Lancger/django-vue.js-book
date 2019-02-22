@@ -50,7 +50,7 @@ python manage.py createsuperuser
 python manage.py createsuperuser --username admin --email admin@domain.com
 
 2、修改密码
-python manage.py changepassword root
+python manage.py changepassword admin
 
 3、清除sessions
 python manage.py clearsessions
