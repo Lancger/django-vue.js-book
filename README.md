@@ -109,7 +109,7 @@ yum install nginx -y
     } 
 
     location /api {
-        proxy_pass http://127.0.0.1:8090;  # 后端端口
+        proxy_pass http://127.0.0.1:8000;  # 后端端口
         add_header Access-Control-Allow-Origin *; 
         add_header Access-Control-Allow-Headers Content-Type;
         add_header Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept";
