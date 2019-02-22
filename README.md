@@ -85,6 +85,9 @@ npm run build --report
 ```
 rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 yum install nginx -y
+
+#拷贝前端文件
+cp -rp dist /usr/share/nginx/html/
 ```
 
 修改Nginx配置文件 nginx.conf, 使server部分的内容如下
