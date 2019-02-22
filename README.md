@@ -35,7 +35,9 @@ vim restful_test/__init__.py
 
 import pymysql
 pymysql.install_as_MySQLdb()
-
+```
+## 数据库操作
+```
 # 创建数据库
 create database rest;
 
