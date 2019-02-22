@@ -18,14 +18,14 @@ django rest framework + vue 的图书管理小项目，前后端分离教程
 #升级pip
 wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
-pip install --upgrade pip
+pip install --upgrade pip -i https://pypi.douban.com/simple/
 pip install -r backend/requirements.txt -i https://pypi.douban.com/simple/
 
 ###安装虚拟环境
 pip install virtualenv
 
 ###激活虚拟环境
-virtualenv demo --no-site-packages
+virtualenv /usr/local/demo2 --no-site-packages
 
 #mysql模块
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pymysql
