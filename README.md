@@ -88,6 +88,9 @@ yum install nginx -y
 
 #拷贝前端文件
 cp -rp dist /usr/share/nginx/html/
+
+#重启服务
+systemctl restart nginx
 ```
 
 修改Nginx配置文件 nginx.conf, 使server部分的内容如下
