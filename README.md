@@ -36,6 +36,9 @@ vim restful_test/__init__.py
 import pymysql
 pymysql.install_as_MySQLdb()
 
+# 创建数据库
+create database rest;
+
 # 执行数据库同步操作
 python manage.py makemigrations
 python manage.py migrate
