@@ -47,6 +47,7 @@ python manage.py migrate
 
 1、创建超级管理员
 python manage.py createsuperuser
+python manage.py createsuperuser --username admin --email admin@domain.com
 
 2、修改密码
 python manage.py changepassword root
