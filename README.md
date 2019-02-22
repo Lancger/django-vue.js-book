@@ -102,11 +102,11 @@ yum install nginx -y
     } 
 
     location /static/rest_framework_swagger {  #  前端API静态文件
-        root /usr/local/seevenv/lib/python3.6/site-packages/rest_framework_swagger/; 
+        root /usr/local/demo2/lib/python2.7/site-packages/rest_framework_swagger/; 
     } 
 
     location /static/rest_framework {  #  前端rest_framework静态文件
-        root /usr/local/seevenv/lib/python3.6/site-packages/rest_framework/;
+        root /usr/local/demo2/lib/python2.7/site-packages/rest_framework/;
     } 
 
     location /api {
