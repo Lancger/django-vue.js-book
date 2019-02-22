@@ -12,10 +12,10 @@ util.title = function(title) {
     window.document.title = title
 }
 
-const tokenUrl = 'http://localhost:8000/api-token-auth/'
+const tokenUrl = 'http://192.168.56.150:8000/api-token-auth/'
 
 const ajaxUrl = env === 'development' ?
-    'http://127.0.0.1:8000' :
+    'http://192.168.56.150:8000' :
     env === 'production' ?
     'https://www.url.com' :
     'https://debug.url.com'
