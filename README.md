@@ -11,6 +11,10 @@ django rest framework + vue 的图书管理小项目，前后端分离教程
 - Vue.js 2.9
     - iview 2.8
     - iview-admin 1.3
+
+- Node 
+    - node v8.15.0
+    - npm v6.4.1
     
 ## 依赖
 
