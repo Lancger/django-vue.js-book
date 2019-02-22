@@ -82,3 +82,7 @@ WrappedAttributeError: 'CSRFCheck' object has no attribute 'process_request'
 解决办法：
 pip install --upgrade django==1.11.6 -i https://pypi.douban.com/simple/
 ```
+
+## 修改前端监听端口
+
+https://stackoverflow.com/questions/33272967/how-to-make-the-webpack-dev-server-run-on-port-80-and-on-0-0-0-0-to-make-it-publ
