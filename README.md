@@ -31,7 +31,7 @@ source  /usr/local/demo2/bin/activate
 #mysql模块
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pymysql
 ###在工程目录中的__init__.py中添加如下代码
-vim myapp/__init__.py
+vim restful_test/__init__.py
 
 import pymysql
 pymysql.install_as_MySQLdb()
