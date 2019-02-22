@@ -62,6 +62,23 @@ pip freeze > requirements.txt
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/  -r requirements.txt
 ```
 
+## 前端部署
+```bash
+# install dependencies
+npm install --unsafe-perm     // 出现权限问题，可添加此参数重试
+npm install --registry=https://registry.npm.taobao.org
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+```
+
 ## 功能
 
 - 简单的图书数据管理，结合豆瓣API做图书信息查询
