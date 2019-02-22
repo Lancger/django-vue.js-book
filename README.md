@@ -68,6 +68,8 @@ pip install -i https://pypi.mirrors.ustc.edu.cn/simple/  -r requirements.txt
 
 # 代码中有部分是硬编码，写的ip为192.168.56.150
 python manage.py runserver 192.168.56.150:8000
+
+登录账号为：admin  密码为：admin123456
 ```
 
 ## 前端构建
