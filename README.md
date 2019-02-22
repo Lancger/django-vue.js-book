@@ -26,6 +26,7 @@ pip install virtualenv
 
 ###激活虚拟环境
 virtualenv /usr/local/demo2 --no-site-packages
+source  /usr/local/demo2/bin/activate
 
 #mysql模块
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pymysql
