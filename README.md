@@ -66,7 +66,8 @@ pip freeze > requirements.txt
 #安装requirements依赖
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/  -r requirements.txt
 
-python manage.py runserver 0.0.0.0:8000
+# 代码中有部分是硬编码，写的ip为192.168.56.150
+python manage.py runserver 192.168.56.150:8000
 ```
 
 ## 前端构建
