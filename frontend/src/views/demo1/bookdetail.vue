@@ -69,7 +69,7 @@
                 let imagepath = this.obj.image
                 let impspl = imagepath.split('/')
                 let imgname = impspl[impspl.length-1]
-                this.imgsrc = 'http://myweb/image/' + imgname
+                this.imgsrc = 'http://192.168.56.150/image/' + imgname
             },
 
             getbooks () {
