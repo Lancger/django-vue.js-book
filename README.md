@@ -80,6 +80,12 @@ npm run build --report
 ```
 
 ## 前端部署
+
+安装nginx
+```
+yum install nginx -y
+```
+
 修改Nginx配置文件 nginx.conf, 使server部分的内容如下
 ```bash
  server
