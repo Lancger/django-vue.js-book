@@ -60,6 +60,8 @@ pip freeze > requirements.txt
 
 #安装requirements依赖
 pip install -i https://pypi.mirrors.ustc.edu.cn/simple/  -r requirements.txt
+
+python manage.py runserver 0.0.0.0:8000
 ```
 
 ## 前端构建
