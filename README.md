@@ -96,7 +96,7 @@ yum install nginx -y
     error_log    /var/log/error.log;
 
     location / { 
-        root /usr/local/seevenv/see-master/frontend/dist/;  # 前端项目文件
+        root /usr/share/nginx/html/dist/;  # 前端项目文件
         try_files $uri $uri/ /index.html =404; 
         index  index.html; 
     } 
