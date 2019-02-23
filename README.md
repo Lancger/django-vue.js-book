@@ -111,23 +111,27 @@ server
    access_log    /var/log/access.log;
    error_log    /var/log/error.log;
 
-   location / { 
+   location / {
        root /usr/share/nginx/html/dist/;  # 前端项目文件
-       try_files $uri $uri/ /index.html =404; 
-       index  index.html; 
-   } 
+       try_files $uri $uri/ /index.html =404;
+       index  index.html;
+   }
+
+   location /image {  #  图书图片文件
+       root /tmp/imgtmp/;
+   }
 
    location /static/rest_framework_swagger {  #  前端API静态文件
-       root /usr/local/demo2/lib/python2.7/site-packages/rest_framework_swagger/; 
-   } 
+       root /usr/local/demo2/lib/python2.7/site-packages/rest_framework_swagger/;
+   }
 
    location /static/rest_framework {  #  前端rest_framework静态文件
        root /usr/local/demo2/lib/python2.7/site-packages/rest_framework/;
-   } 
+   }
 
    location /api {
        proxy_pass http://127.0.0.1:8000;  # 后端端口
-       add_header Access-Control-Allow-Origin *; 
+       add_header Access-Control-Allow-Origin *;
        add_header Access-Control-Allow-Headers Content-Type;
        add_header Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept";
        add_header Access-Control-Allow-Methods "GET, POST, OPTIONS, PUT, DELETE, PATCH";
