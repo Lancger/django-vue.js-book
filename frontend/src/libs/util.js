@@ -17,8 +17,8 @@ const tokenUrl = 'http://192.168.56.150:8000/api-token-auth/'
 const ajaxUrl = env === 'development' ?
     'http://192.168.56.150:8000' :
     env === 'production' ?
-    'https://www.url.com' :
-    'https://debug.url.com'
+    'http://192.168.56.150:8000' :
+    'http://192.168.56.150:8000'
 
 util.ajax = axios.create({
     tokenURL: tokenUrl,
