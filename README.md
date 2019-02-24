@@ -97,7 +97,7 @@ rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0
 yum install nginx -y
 
 #拷贝前端文件
-rm -rf /usr/share/nginx/html/
+rm -rf /usr/share/nginx/html/*
 cp -rp dist/* /usr/share/nginx/html/
 
 #重启服务
