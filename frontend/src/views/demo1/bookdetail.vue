@@ -74,11 +74,12 @@
 
             getbooks () {
             const path = this.util.ajax.defaults.baseURL + this.backendsapi.doubanbook + this.$route.params.name 
-
+            console.log(path)
             this.ajax({
                 method: 'get',
                 url: path,
                 data: {},
+                
             })
 
             .then(response => {
