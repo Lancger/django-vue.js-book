@@ -98,7 +98,7 @@ yum install nginx -y
 
 #拷贝前端文件
 rm -rf /usr/share/nginx/html/*
-cp -rp dist/* /usr/share/nginx/html/
+cp -rp dist /usr/share/nginx/html/
 
 #重启服务
 systemctl restart nginx
