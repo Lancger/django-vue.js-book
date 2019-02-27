@@ -109,6 +109,8 @@ systemctl restart nginx
 server
  {
    listen 80;    # 用户访问端口
+   server_name www.devbook.com;
+   
    access_log    /var/log/access.log;
    error_log    /var/log/error.log;
 
